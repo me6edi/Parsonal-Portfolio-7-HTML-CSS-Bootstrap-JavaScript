@@ -28,6 +28,9 @@ Primary use:    Project Type
     Reset Css
 ==========================================
 */
+html,body{
+    height: 100%;
+}
 ul {
     margin: 0;
     padding: 0;
@@ -44,6 +47,16 @@ h6,
 p {
     margin: 0;
 }
+.section-padding{
+    padding: 80px 0;
+}
+.section-header h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 600;
+    position: relative;
+}
 
 /*
 ==========================================
@@ -51,8 +64,9 @@ p {
 ==========================================
 */
 .header-main {
-	position: relative;
-	z-index: 0;
+	position: absolute;
+    z-index: 99;
+    width: 100%;
 }
 .header-main::after {
 	position: absolute;
@@ -87,4 +101,104 @@ nav.main-menu ul li a{
 }
 nav.main-menu ul li a:hover{
     color:#fe320a;
+}
+
+/*
+==========================================
+    Header Img CSS
+==========================================
+*/
+.header-img{
+    background: url(../img/header-img.webp);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: relative;
+    z-index: 0;
+}
+.header-img::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #252525;
+    opacity: .42;
+    z-index: -1;
+}
+.d-table{
+    display: table;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+.d-table-cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+.header-img .container,
+.header-img .row,
+.header-img .col-md-12{
+    height: 100%;
+}
+.header-content{
+    color: #fff;
+    margin-top: 95px;
+}
+.header-content h1{
+    font-family: 'Raleway',sans-serif;
+    font-size: 70px;
+    font-weight: 500;
+}
+.header-content h1 span{
+    color: #fe320a;
+    font-weight: 700;
+}
+.header-content p{
+    width: 850px;
+    margin: 22px auto 35px auto;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+.header-content a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #fe320a;
+    padding: 9px 32px;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Raleway',sans-serif;
+    transition: .3s;
+}
+.header-content a:hover{
+    background: #fff;
+    color: #fe320a;
+}
+.section-header h2 span{
+    color: #fe320a;
+}
+.section-header h2::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 156px;
+    margin-top: 8px;
+    background: #fe320a;
+    margin-left: -80px;
+    top: 100%;
+    left: 50%;
+}
+.section-header h2::before{
+    content: '';
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background: #fe320a;
+    border-radius: 50px;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
 }
