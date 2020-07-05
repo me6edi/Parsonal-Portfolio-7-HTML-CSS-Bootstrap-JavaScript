@@ -202,3 +202,49 @@ nav.main-menu ul li a:hover{
     left: 50%;
     margin-left: -8px;
 }
+
+.about-left img {
+    width: 100%;
+    height: auto;
+  }
+  .about-left {
+    position: relative;
+    text-align: center;
+    color: #fff;
+  }
+  .about-left .about-left-details {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+  }
+.about-left .about-left-details::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #252525;
+    z-index: -1;
+    opacity: .69;
+  }
+  .about-left-details h4 {
+    text-transform: uppercase;
+    font-family: 'Raleway',sans-serif;
+  }
+.about-left-details ul li a{
+      display: inline-block;
+  }
+.about-left-details ul li {
+	display: inline;
+}
+.about-left-details ul li a{
+    color: #fff;
+    font-size: 18px;
+    background: #252525; 
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    padding: 5px;
+}
