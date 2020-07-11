@@ -206,7 +206,14 @@ nav.main-menu ul li a:hover{
     left: 50%;
     margin-left: -8px;
 }
-
+/*
+==========================================
+    About Css
+==========================================
+*/
+.nandine-about{
+    background: #f6f6f6;
+}
 .about-left img {
     width: 100%;
     height: auto;
@@ -298,4 +305,46 @@ nav.main-menu ul li a:hover{
     background: #fff;
     color: #fe320a;
     border: 1px solid #fe320a;
+}
+.video-area{
+    background: url('../img/video.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    z-index: 0;
+}
+
+.video-area::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: #000;
+    left: 0;
+    opacity:.60;
+    z-index: -1;
+  } 
+.video-area h2{
+    font-size: 36px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+}
+.video-icon a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 32px;
+	border: 2px solid #fff;
+	display: inline-block;
+	width: 95px;
+	height: 95px;
+	line-height: 85px;
+	border-radius: 10px;
+    margin-top: 40px;
+    transition: .3s;
+}
+.video-icon a:hover{
+    background: #fff;
+    color: #000;
 }
