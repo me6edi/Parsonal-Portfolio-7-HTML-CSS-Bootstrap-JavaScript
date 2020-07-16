@@ -11,7 +11,7 @@ $(document).ready(function($){
     //$( ".owl-next").html('<i class="fa screenshort-arow fa-chevron-right"></i>');
 
     //Magnific Poup
-    $('#Youtube-video').magnificPopup({
+    $('.youtube-video').magnificPopup({
         type:'iframe',
         iframe: {
             patterns: {
@@ -24,4 +24,10 @@ $(document).ready(function($){
             srcAction: 'iframe_src',
           }
     });
+
+
+    $('.skillbar').skillBars({
+        // options here
+       });
+
 }(jQuery));

@@ -8,7 +8,6 @@ Author Name: Author Name
 Primary use:    Project Type
 -------------------------------------------------------------------*/
 
-
 /*------------------------------------------------------------------
 [Table of contents]
 
@@ -22,6 +21,68 @@ Primary use:    Project Type
 ==========================================
 */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+
+
+/*
+==========================================
+    Start skill bar css
+==========================================
+*/
+
+.skillbar {
+    position: relative;
+    display: inline-block;
+    margin: 15px 0;
+    width: 100%;
+    background: #eee;
+    height: 35px;
+    border-radius: 3px;
+    width: 100%;
+  }
+  
+  .skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #ffffff;
+    background: #6adcfa;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    height: 35px;
+    line-height: 35px;
+  }
+  
+  .skillbar-bar {
+    height: 35px;
+    width: 0px;
+    background: #6adcfa;
+    border-radius: 3px;
+    display: inline-block;
+  }
+  
+  .skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 35px;
+    line-height: 35px;
+    color: #ffffff;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  
+  /*
+==========================================
+    End skill bar css
+==========================================
+*/
+
 
 /*
 ==========================================
@@ -347,4 +408,95 @@ nav.main-menu ul li a:hover{
 .video-icon a:hover{
     background: #fff;
     color: #000;
+}
+
+/*
+==========================================
+         Our section 
+==========================================
+*/
+.services-box i{
+    color: #ff0000;
+    font-size: 48px;
+}
+.services-box h4{
+    font-size: 24px;
+    color: #151515;
+    font-family: 'Raleway',sans-serif;
+    margin: 13px 0;
+}
+.services-box p{
+    line-height: 24px;
+    color: #252525;
+}
+.services-box {
+	margin-top: 70px;
+}
+
+
+
+/*
+==========================================
+         My skill 
+==========================================
+*/
+section.skill {
+    background: #f3f3f3;
+  }
+  .skill-left h3 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Raleway',sans-serif;
+  }
+  .skill-left p {
+    font-weight: 300;
+    color: #151515;
+    line-height: 26px;
+    margin-top: 20px;
+  }
+  .skill-left p:last-child {
+      margin-top: 30px;
+  }
+  .skill-right h3 {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Raleway',sans-serif;
+    color: #1b1b1b;
+  }
+  .skill-right p {
+	line-height: 26px;
+	font-weight: 300;
+	color: #2b2b2b;
+	font-family: 'Raleway',sans-serif;
+	margin-top: 18px;
+} 
+.mehedi-skill-bar p {
+    margin-top: 0;
+  }
+.mehedi-skill-bar .skillbar{
+    background: #000;
+    height: 0;
+    border-radius: 30px;
+    padding: 10px 25px;
+    overflow: hidden;
+}
+.mehedi-skill-bar p.skillbar-bar{
+    background: #ff0000 !important;
+    height: 10px;
+    position: absolute;
+    top: 5.1px;
+    left: 4px;
+    border-radius: 42px;
+}
+.mehedi-skill-bar span.skill-bar-percent{
+    color: #fff;
+    top: -8px;
+    position: absolute;
+}
+.skillbar-item h5{
+    font-size: 16px;
+    color: #2c2b2b;
+    font-weight: 400;
+    margin-bottom: -5px;
+    margin-top: 14px;
 }
