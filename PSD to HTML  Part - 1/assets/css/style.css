@@ -500,3 +500,53 @@ section.skill {
     margin-bottom: -5px;
     margin-top: 14px;
 }
+.mehedi-skill-bar .skillbar{
+    margin-bottom: 0 !important;
+}
+
+/*
+==========================================
+         Counter 
+==========================================
+*/
+.counter{
+    background: url(../img/Counter-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Raleway',sans-serif;
+}
+.counter::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .6;
+    z-index: -1;
+}
+.counter-box i{
+    font-size: 22px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 48px ;
+    margin-bottom: 6px;
+}
+.counter-number{
+    font-size: 30px;
+    font-weight: 600;
+}
+.counter-name{
+    font-size: 26px;
+    text-transform:capitalize;
+    font-weight: 600;
+
+}
