@@ -518,7 +518,7 @@ section.skill {
     z-index: 0;
     text-align: center;
     color: #fff;
-    font-family: 'Raleway',sans-serif;
+      
 }
 .counter::after{
     content: '';
@@ -548,5 +548,25 @@ section.skill {
     font-size: 26px;
     text-transform:capitalize;
     font-weight: 600;
-
+}
+/*
+==========================================
+         Portfolio
+==========================================
+*/
+.portfolio-menu{
+    text-align: center;
+}
+.portfolio-menu button{
+    background: transparent;
+    border: 0px;
+    color: #3c3c3c;
+    font-family: 'Raleway',sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .3s;
+}
+.portfolio-menu button:hover{
+    color: red;
 }
