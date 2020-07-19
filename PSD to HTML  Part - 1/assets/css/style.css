@@ -559,7 +559,7 @@ section.skill {
 }
 .portfolio-menu button{
     background: transparent;
-    border: 0px;
+    border: 0;
     color: #3c3c3c;
     font-family: 'Raleway',sans-serif;
     font-size: 20px;
@@ -569,4 +569,7 @@ section.skill {
 }
 .portfolio-menu button:hover{
     color: red;
+}
+.portfolio-item {
+	margin-top: 34px;
 }

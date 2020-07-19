@@ -43,4 +43,7 @@ $(document).ready(function($){
         });
     });
 
+    // Mixitup Active
+    var mixer = mixitup('.portfolio-content');
+
 }(jQuery));
