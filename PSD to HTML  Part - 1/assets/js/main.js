@@ -10,6 +10,25 @@ $(document).ready(function($){
     //$( ".owl-prev").html('<i class="fa screenshort-arow fa-chevron-left"></i>');
     //$( ".owl-next").html('<i class="fa screenshort-arow fa-chevron-right"></i>');
 
+    // Team
+    $('.owl-carousel-team').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        items:4,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
+        }
+    })
+
     //Magnific Poup
     $('.youtube-video').magnificPopup({
         type:'iframe',
@@ -45,5 +64,16 @@ $(document).ready(function($){
 
     // Mixitup Active
     var mixer = mixitup('.portfolio-content');
+
+    // portfolio Popup
+    $('.image-popup-vertical-fit').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		mainClass: 'mfp-img-mobile',
+		image: {
+			verticalFit: true
+		}
+		
+	});
 
 }(jQuery));
