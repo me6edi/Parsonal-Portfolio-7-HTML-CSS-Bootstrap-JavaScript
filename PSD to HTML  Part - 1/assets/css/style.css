@@ -610,3 +610,76 @@ section.skill {
          Team css
 ==========================================
 */
+.team-item{
+    position: relative;
+}
+.team-item-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    color: #fff;
+}
+.team-item-hover::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: red;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    transition: .3s;
+}
+.team-item:hover .team-item-hover::after{
+     visibility: visible;
+     opacity: .44;
+}
+.team-hover-content{
+    background: red;
+    position: absolute;
+    width: 100%;
+    bottom: -68px;
+    height: auto;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    transition: .3s;
+    cursor: pointer;
+}
+.team-item:hover .team-hover-content{
+    bottom: 0;
+}
+h4.team-name{
+    text-transform: uppercase;
+}
+.team-hover-content ul li{
+    display: inline;
+}
+.team-hover-content ul li a{
+    color: #fff;
+    font-size: 18px;
+    margin: 0 5px;
+}
+.team-hover-content ul{
+    margin-top: 4px;
+}
+/*
+==========================================
+         Testimonial css
+==========================================
+*/
+.owl-carousel-testimonial img{
+ width: 100px !important;
+ margin: 0 auto;
+ border-radius: 15%;
+}
+h4.testimonial-name{
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 12px 0;
+}

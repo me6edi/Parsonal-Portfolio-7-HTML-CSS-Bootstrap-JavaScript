@@ -13,7 +13,7 @@ $(document).ready(function($){
     // Team
     $('.owl-carousel-team').owlCarousel({
         loop:true,
-        margin:10,
+        margin:20,
         nav:false,
         items:4,
         responsive:{
@@ -27,7 +27,14 @@ $(document).ready(function($){
                 items:4
             }
         }
-    })
+    });
+        // Testimonial
+        $('.owl-carousel-testimonial').owlCarousel({
+            loop:true,
+            margin:20,
+            nav:false,
+            items:1,
+        });
 
     //Magnific Poup
     $('.youtube-video').magnificPopup({
