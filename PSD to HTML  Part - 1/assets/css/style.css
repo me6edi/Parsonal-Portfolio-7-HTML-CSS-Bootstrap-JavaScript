@@ -668,11 +668,21 @@ h4.team-name{
 .team-hover-content ul{
     margin-top: 4px;
 }
+.team.section-padding {
+    background: #f3f3f3;
+  }
 /*
 ==========================================
          Testimonial css
 ==========================================
 */
+.testimonial{
+    background: url('../img/testimonial/testimonial-bg.jpg');
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    color: #fff;
+}
 .owl-carousel-testimonial img{
  width: 100px !important;
  margin: 0 auto;
@@ -682,4 +692,68 @@ h4.testimonial-name{
     text-transform: uppercase;
     font-size: 18px;
     margin: 12px 0;
+}
+
+.testimonial::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .6;
+    z-index: -1;
+  }
+.testimonial p{
+    font-weight: 300;
+}
+
+/*
+==========================================
+         Blog css
+==========================================
+*/
+.blog-details {
+	padding: 25px;
+}
+.blog-item{
+    box-shadow: 0 0 10px #ddd;
+}
+.blog-item img{
+    max-width: 100%;
+    border-bottom: 8px solid #464646;
+}
+h4.blog-title{
+    font-size: 24px;
+    color: #433f3f;
+    font-weight: 600;
+    font-family: 'Raleway',sans-serif;
+}
+.blog-details.date{
+    font-size: 13px;
+    margin: 12px;
+    margin-bottom: 20px;
+}
+.blog-details p{
+    line-height: 24px;
+    color: #433f3f;
+}
+a.blog-button{
+    text-decoration: none;
+    background: #252525;
+    color: #fff;
+    font-size: 14px;
+    padding: 6px 12px;
+    margin-top: 14px;
+    transition: .3s;
+    display: inline-block;
+    border: 1px solid #252525;
+}
+a.blog-button:hover{
+    background: transparent;
+    color: #252525;
+}
+.date i {
+	margin-right: 5px;
 }
