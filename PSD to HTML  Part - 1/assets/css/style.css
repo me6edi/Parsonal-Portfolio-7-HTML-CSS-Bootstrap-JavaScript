@@ -757,3 +757,27 @@ a.blog-button:hover{
 .date i {
 	margin-right: 5px;
 }
+
+/*
+==========================================
+         contact css
+==========================================
+*/
+.contact{
+    background: url('../img/contact-bg.jpg');
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    color: #fff;
+}
+.contact::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    z-index: -1;
+    background: #000000;
+    opacity: .55;
+}
