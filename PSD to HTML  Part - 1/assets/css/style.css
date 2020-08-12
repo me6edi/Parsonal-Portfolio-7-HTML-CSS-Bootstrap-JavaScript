@@ -222,7 +222,7 @@ nav.main-menu ul li a:hover{
     font-weight: 700;
 }
 .header-content p{
-    width: 850px;
+    max-width: 850px;
     margin: 22px auto 35px auto;
     font-family: 'Raleway',sans-serif;
     font-weight: 400;
@@ -835,4 +835,23 @@ a.blog-button:hover{
 }
 .footer-icon ul li a{
     color: #fff;
+}
+/*
+==========================================
+         Responsive Menu css (Bootsrap customize)
+==========================================
+*/ 
+.navbar.navbar-expand-lg.main-menu {
+    padding: 0;
+}
+nav.main-menu ul{
+    margin-left: auto;
+}
+button.navbar-toggler i{
+    background: #000000;
+    color: #fff;
+    padding: 7px 16px;
+}
+button.navbar-toggler i:hover{
+    color: #fe320a;
 }

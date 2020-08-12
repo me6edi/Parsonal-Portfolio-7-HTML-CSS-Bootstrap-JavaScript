@@ -1,3 +1,40 @@
 /*******************************
 	All Responsive Code
 *******************************/
+@media ( max-width: 991px ) {
+    button.navbar-toggler.collapsed i{
+        background: #000;
+        color: #fff;
+        padding: 7px 16px;
+    }
+
+    .main-menu ul.navbar-nav{
+        background: rgba(0, 0, 0, .8);
+        width: 100%;
+    }
+    .main-menu ul.navbar-nav li a {
+		padding: 10px 0;
+	}
+	
+	.header-content h1{
+		font-size: 45px;
+	}
+
+	.header-content p {
+		font-size: 14px;
+	}
+	.counter-box{
+		margin-bottom: 35px;
+	}
+}
+@media ( max-width: 767px ) {
+	.about-right h3{
+		margin-top: 50px;
+	}
+	.video-area h2{
+		font-size: 24px;
+	}
+	.portfolio-item img {
+		width: 100%;
+	}
+}
