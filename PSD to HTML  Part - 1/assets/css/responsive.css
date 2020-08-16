@@ -26,6 +26,12 @@
 	.counter-box{
 		margin-bottom: 35px;
 	}
+	.blog-item{
+		margin-bottom: 35px;
+	}
+	.about-left img {
+		margin-top: 140px;
+	}
 }
 @media ( max-width: 767px ) {
 	.about-right h3{
@@ -36,5 +42,23 @@
 	}
 	.portfolio-item img {
 		width: 100%;
+	}
+	.blog-item img{
+		width: 100%;
+	}
+}
+@media ( max-width: 576px ){
+	.footer-icon ul li {
+		display: inline;
+	}
+	.footer-icon{
+		text-align: center !important;
+	}
+	.footer .text-right {
+		text-align: center !important;
+	}
+	.col.text-center {
+		margin-left: 162px;
+		margin-bottom: 15px;
 	}
 }
